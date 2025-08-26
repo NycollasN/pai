@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>noticias</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  
+    <style>
+      :root{
+    --font-padrão: arial, verdana, helvetica, sans-serif;
+    --font-jaja:'jaja', sans-serif;
+    --cor1:#262626;
+    --cor2:#595959;
+    --cor3:#8C8C8C;
+    --cor4:#D9D9D9;
+    --font-family: "Roboto", sans-serif;
+    --cor5: #A6800F;
+  --cor6:#D9B811;
+  --cor7:#89D9D9;
+  --cor8 :#2D7373;
+
+}
+      header{
+   background-color: #2D7373;
+    position: fixed;
+    z-index: 999;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.486);
+   width: 100%;
+    height: 90px;
+
+      }
+      h1{
+        text-align: center;
+        margin: auto;
+        font: var(--font-jaja);
+        font-size: 50px;
+        color: black;
+        text-shadow: 1px 2px 3px #2D7373;
+      transform: translate(30px, 100px);
+      }
+      header nav#b div#logo{
+        height: auto;
+        width: 70px;
+        transform: translate(0px, 10px);
+        
+      }
+       header nav#b div#logo img{
+        height: auto;
+        width: 70px;
+        max-width: 100%;
+
+       }
+       header ul#principal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate(0px, -80px);
+       
+        list-style: none;
+       
+       }
+          header ul#principal li a{
+            color:rgba(228, 225, 22, 0.932);
+            text-decoration: none;
+            margin-left: 14px;
+            font-size: 1.3rem;
+           
+          }
+            header ul#principal li a:hover{
+              text-decoration: underline;
+              color: #1e4d4d;
+            }
+            /*menu rsponsivo*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+header #principal {
+    list-style: none;
+
+
+}
+header nav#b ul#icone li ion-icon{
+    font-size: 50px;
+    color:white;
+   margin-right: 0,1rem;
+}
+header nav#b ul#principal {
+    margin-left: 0.1rem;
+    display: flex;
+    flex-flow: row wrap;
+    
+   }
+   header nav#b ul#icone {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+
+   }
+   header nav#b ul#principal li{
+    margin-right: 2rem;
+    transform: translate(0px, 35px);
+    font-size: 1.5rem;
+   }
+   header nav#b ul#principal li a{
+    text-decoration: none;
+  
+    font-size: 100%;
+    padding-bottom: 10px;
+
+   }
+    header nav#b ul#principal li a:hover{
+        text-decoration: underline;
+        background-color: rgb(8, 118, 133);
+       
+    }
+    @media screen and (max-width: 760px){
+        header nav#b{
+ justify-content: space-between;
+   
+
+    
+}
+
+   header nav#b ul#icone{
+    display: flex;
+   }   
+     
+    header nav#b ul#icone{
+        display: flex;
+    }  
+ header nav#b ul#icone li#menux{
+    display: none;
+ }
+   header nav#b ul#principal{
+    flex-direction: column;
+    width: 80%;
+    height: 85vh;
+    background-color: rgb(70, 104, 104);
+    padding-top: .5rem;
+    position: absolute;
+    top: 9.3rem;
+    right: 0;
+    z-index: 999;
+    display: none;
+   }
+    header nav#b ul#principal li{
+        margin: .5rem;
+        margin-left: 1rem;
+    }
+    }
+    @media screen and (max-width: 1110px) {
+       header nav#b ul#principal li a{
+        font-size: 90%;
+
+       }  
+       
+
+    }
+     @media screen and (max-width:970px) {
+        header nav#b div#logo {
+            margin-left: 1rem;
+        }
+        header nav#b {
+            display: flex;
+            justify-content: space-between;
+          
+        }    
+        header nav#b ul#icone {
+            display: flex;
+        } 
+        header nav#b ul#icone li#menux {
+            display: none;
+        }
+        header nav#b ul#principal {
+            flex-direction: column;
+            width: 80%;
+            height: 85vh;
+            background-image: linear-gradient(to bottom, rgb(73, 124, 124), yellow);
+            padding-top: .5rem;
+            position: absolute;
+            top: 9.3rem;
+            right: 0;
+            z-index: 999;
+            display: none;
+        }
+        header nav#b ul#principal li {
+            margin: .5rem;
+            margin-left: 1rem;
+        }
+    }
+    
+
+    /*menu resposivo*/
+      /*menu rsponsivo*/
+
+ul#icone li ion-icon {
+  font-size: 40px;
+  color: white;
+}
+
+
+
+      .logo{
+        width: 100px;
+        height: auto;
+        transform: translate(-30px, -20px);
+      }
+      ul {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+    
+        .n-i {
+         
+  list-style: none;
+
+transform: translate(-150px);
+  
+}
+.n-is{
+  list-style: none;
+}
+
+.n-l {
+transform: translate(-50px);
+  text-decoration: none;
+ color:black;
+ font: var(--font);
+ font-size: 1.3rem;
+ text-align: center;
+
+
+
+ 
+
+
+}
+a.login-l{
+  list-style: none;
+  text-decoration: none;
+  color: #000000;
+  font: var(--font);
+  background-image: linear-gradient(to bottom, var(--cor4), var(--cor6));
+  padding: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+
+ 
+    
+
+header nav#b{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    height: 100px;
+    background-color: var(--cor10);
+  position: fixed;
+  left: 4.5%;
+  width: 92%;
+  border-radius: 30px;
+  top: 24px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 4%;
+  align-items: center;
+  z-index: 999;
+   
+   
+    align-items: center;
+   
+transition: all 1s;
+opacity: 2;
+    
+}
+header nav#b div#logo{
+   
+    width: 100px;
+        height: auto;
+        transform: translate(-30px, 4px);
+}
+header nav#b div#logo img{
+    max-width: 100%;
+     height: 100%; 
+
+}
+header nav#b ul#icone  {
+    display: none;
+
+
+}
+header #principal {
+    list-style: none;
+
+}
+header nav#b ul#icone li ion-icon{
+    font-size: 50px;
+    color:white;
+   margin-right: 0,1rem;
+}
+header nav#b ul#principal {
+    margin-left: 0.1rem;
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    
+   }
+   header nav#b ul#icone {
+    list-style: none;
+
+   }
+   header nav#b ul#principal li{
+    margin-right: 2rem;
+   }
+   header nav#b ul#principal li a{
+    text-decoration: none;
+ color: #000000;
+    font-size: 20px;
+    padding-bottom: 10px;
+
+   }
+    header nav#b ul#principal li a:hover{
+        text-decoration: underline;
+        
+        color:rgba(145, 145, 6, 0.329);
+    }
+    ul#principal button.a{
+      border: none;
+justify-content: space-between;
+    }
+      ul#principal button.a a{
+     background-image: linear-gradient(to bottom, var(--cor4), var(--cor6));
+     color: black;
+      text-decoration: none;
+      list-style: none;
+      border: none;
+    padding: 10px;
+    border-radius: 10px;
+    
+    }
+    @media screen and (max-width: 760px){
+        header nav#b{
+ justify-content: space-between;
+   
+
+    
+}
+
+
+   header nav#b ul#icone{
+    display: flex;
+   }   
+     
+    header nav#b ul#icone{
+        display: flex;
+    }  
+ header nav#b ul#icone li#menux{
+    display: none;
+ }
+   header nav#b ul#principal{
+    flex-direction: column;
+    width: 80%;
+    height: 85vh;
+    background-color: rgb(70, 104, 104);
+    padding-top: .5rem;
+    position: absolute;
+    top: 9.3rem;
+    right: 0;
+    z-index: 999;
+    display: none;
+   }
+    header nav#b ul#principal li{
+        margin: .5rem;
+        margin-left: 1rem;
+    }
+     ul#principal button.a{
+      text-decoration: none;
+      transform: translate(390px);
+     }
+   ul#principal button.a a{
+      background-color: yellow;
+     color: black;
+      text-decoration: none;
+      list-style: none;
+     
+    
+    }
+    }
+
+    @media screen and (max-width: 1110px) {
+       header nav#b ul#principal li a{
+        font-size: 90%;
+
+       }  
+       
+
+    }
+     @media screen and (max-width:970px) {
+        header nav#b div#logo {
+            margin-left: 1rem;
+        }
+        header nav#b {
+            display: flex;
+            justify-content: space-between;
+          
+        }    
+        header nav#b ul#icone {
+            display: flex;
+        } 
+        header nav#b ul#icone li#menux {
+            display: none;
+        }
+        header nav#b ul#principal {
+            flex-direction: column;
+            width: 80%;
+            height: 85vh;
+            background-image: linear-gradient(to bottom, rgb(73, 124, 124), yellow);
+            padding-top: .5rem;
+            position: absolute;
+            top: 9.3rem;
+            right: 0;
+            z-index: 999;
+            display: none;
+        }
+        header nav#b ul#principal li {
+            margin: .5rem;
+            margin-left: 1rem;
+        }
+    }
+
+  /* Container das imagens */
+.cont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 4 colunas no desktop */
+  gap: 15px;
+  padding: 20px;
+ 
+transform: translate(0px, 90px);
+margin: auto;
+
+
+}
+
+/* Cada item de imagem */
+.item {
+  position: relative;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+ width: 300px;
+ margin: auto;
+ left: 30px;
+ 
+}
+
+/* Efeito ao passar o mouse */
+.item:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Área de texto sobre a imagem */
+.conte {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  color: white;
+  text-align: left;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.des {
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* Botão estilizado */
+.item button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #2D7373;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.item button a{
+  color: white;
+  text-decoration: none;
+}
+
+.item button:hover {
+  background-color: #1e4d4d;
+}
+
+/* Responsividade */
+
+/* Galeria: base (mobile) */
+.cont {
+  display: grid;
+  grid-template-columns: 1fr;     /* 1 coluna no mobile */
+  gap: 15px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  /* remova qualquer transform aqui */
+
+}
+
+/* Cada item */
+.item {
+  position: relative;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,.2);
+  transition: transform .3s ease, box-shadow .3s ease;
+
+  width: 100%;        /* ocupa 100% da célula do grid */
+  max-width: none;    /* remove travas de largura */
+  /* remova: width: 300px; e left: 30px; do seu CSS antigo */
+}
+
+/* 2 colunas a partir de 600px */
+@media (min-width: 600px) {
+  .cont {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 3 colunas a partir de 900px */
+@media (min-width: 900px) {
+  .cont {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+
+
+        /*footer*/
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+footer {
+  width: 100%;
+  color: white;
+  margin-top: 100px;
+}
+.fo-cs {
+  background-color: #2D7373;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 100px;
+  gap: 80px;
+}
+
+#fsm {
+  display: flex;
+  gap: 20px;
+}
+
+#fsm a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(0, 0); /* Removi translate para evitar quebra de layout */
+}
+
+#fsm .foo-li:hover {
+  opacity: 0.8;
+}
+
+#fsm .foo-li {
+  border-radius: 60%;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: white;
+  transition: all 0.4s;
+}
+
+#instagram {
+  background: linear-gradient(rgb(109, 12, 221), #ff2992, #ff9807);
+}
+
+#facebook {
+  background-color: #4267b3;
+}
+
+#whatsapp {
+  background-color: #25d366;
+}
+
+.fo-lis {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  list-style: none;
+}
+
+.fo-lis .foo-li {
+  color: #8C8C8C;
+  text-decoration: none;
+}
+
+.fo-lis .foo-li:hover {
+  color: #89D9D9;
+}
+
+#fo-su {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#fo-su p {
+  color: #8C8C8C;
+}
+
+#ig {
+  display: flex;
+  align-items: center;
+  background-color: #262626;
+  border-radius: 4px;
+}
+
+#ig input {
+  all: unset;
+  padding: 0.75rem;
+  width: 100%;
+}
+
+#ig button {
+  background-color: #dab917;
+  border: none;
+  color: white;
+  padding: 0px 1.25rem;
+  font-size: 1.25rem;
+  height: 100%;
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+#ig button:hover {
+  opacity: 0.8;
+}
+
+#f-t {
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  font-size: 0.9rem;
+  padding: 1.5rem;
+  font-weight: 100;
+}
+
+#f-t a {
+  color: #595959;
+  transition: all 0.8s;
+  text-decoration: none;
+}
+
+#f-t a:hover {
+  color: #2D7373;
+}
+
+/* 🔧 MEDIA QUERIES CORRIGIDOS */
+@media screen and (max-width: 768px) {
+  .fo-cs {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .fo-cs {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+  }
+}
+
+
+    </style>
+</head>
+<body>
+ <header>
+        <nav id="b">
+            <div id="logo">
+                <img src="yy - Copia.png" alt="logo">
+            </div>
+<ul id="icone">
+    <li id="menu"><ion-icon name= "menu-outline"></ion-icon></li>
+    <li id="menux">
+        <ion-icon name= "close-outline"></ion-icon>
+    </li>
+</ul>
+<ul id="principal">
+    <li><a href="h.html">home</a></li>
+    <li><a href="noticias.html">notícia</a></li>
+    <li><a href="curiosidades.html">curiosidades</a></li>
+    <button class="a"><a href="#">contato</a></button>
+</ul>
+
+        </nav>
+        
+    </header>
+  <main class="m"> <h1>Quer saber mais é aqui!</h1> <div class="cont">
+    <div class="item" style="background-image: url('gettyimages-114323137-612x612.jpg');">
+        <div class="conte">
+            <div class="name">Blala</div>
+            <div class="des">Lorem ipsum dolor sit amet...</div>
+            <button><a href="https://youtu.be/7Hn1v0_2nas?si=J0ImqcpjgD9LeXwm" target="_blank">see more</a></button>
+        </div>
+    </div>
+
+    <div class="item" style="background-image: url('gettyimages-114323137-612x612.jpg');">
+        <div class="conte">
+            <div class="name">Blala</div>
+            <div class="des">Lorem ipsum dolor sit amet...</div>
+            <button>See more</button>
+        </div>
+    </div>
+
+    <div class="item" style="background-image: url('gettyimages-114323137-612x612.jpg');">
+        <div class="conte">
+            <div class="name">Blala</div>
+            <div class="des">Lorem ipsum dolor sit amet...</div>
+            <button>See more</button>
+        </div>
+    </div>
+
+    <!-- repete para as outras imagens -->
+</div>
+<div class="cont">
+    <div class="item" style="background-image: url('gettyimages-114323137-612x612.jpg');">
+        <div class="conte">
+            <div class="name">Blala</div>
+            <div class="des">Lorem ipsum dolor sit amet...</div>
+            <button>See more</button>
+        </div>
+    </div>
+
+    <div class="item" style="background-image: url('gettyimages-114323137-612x612.jpg');">
+        <div class="conte">
+            <div class="name">Blala</div>
+            <div class="des">Lorem ipsum dolor sit amet...</div>
+            <button>See more</button>
+        </div>
+    </div>
+
+    <div class="item" style="background-image: url('gettyimages-114323137-612x612.jpg');">
+        <div class="conte">
+            <div class="name">Blala</div>
+            <div class="des">Lorem ipsum dolor sit amet...</div>
+            <button>See more</button>
+        </div>
+    </div>
+
+    <!-- repete para as outras imagens -->
+</div>
+<div class="cont">
+    <div class="item" style="background-image: url('gettyimages-114323137-612x612.jpg');">
+        <div class="conte">
+            <div class="name">Blala</div>
+            <div class="des">Lorem ipsum dolor sit amet...</div>
+            <button>See more</button>
+        </div>
+    </div>
+
+    <div class="item" style="background-image: url('gettyimages-114323137-612x612.jpg');">
+        <div class="conte">
+            <div class="name">Blala</div>
+            <div class="des">Lorem ipsum dolor sit amet...</div>
+            <button>See more</button>
+        </div>
+    </div>
+
+    <div class="item" style="background-image: url('gettyimages-114323137-612x612.jpg');">
+        <div class="conte">
+            <div class="name">Blala</div>
+            <div class="des">Lorem ipsum dolor sit amet...</div>
+            <button>See more</button>
+        </div>
+    </div>
+
+    <!-- repete para as outras imagens -->
+</div>
+<div class="cont">
+    <div class="item" style="background-image: url('gettyimages-114323137-612x612.jpg');">
+        <div class="conte">
+            <div class="name">Blala</div>
+            <div class="des">Lorem ipsum dolor sit amet...</div>
+            <button>See more</button>
+        </div>
+    </div>
+
+    <div class="item" style="background-image: url('gettyimages-114323137-612x612.jpg');">
+        <div class="conte">
+            <div class="name">Blala</div>
+            <div class="des">Lorem ipsum dolor sit amet...</div>
+            <button>See more</button>
+        </div>
+    </div>
+
+    <div class="item" style="background-image: url('gettyimages-114323137-612x612.jpg');">
+        <div class="conte">
+            <div class="name">Blala</div>
+            <div class="des">Lorem ipsum dolor sit amet...</div>
+            <button>See more</button>
+        </div>
+    </div>
+
+    <!-- repete para as outras imagens -->
+</div>
+<div class="cont">
+    <div class="item" style="background-image: url('gettyimages-114323137-612x612.jpg');">
+        <div class="conte">
+            <div class="name">Blala</div>
+            <div class="des">Lorem ipsum dolor sit amet...</div>
+            <button>See more</button>
+        </div>
+    </div>
+
+    <div class="item" style="background-image: url('gettyimages-114323137-612x612.jpg');">
+        <div class="conte">
+            <div class="name">Blala</div>
+            <div class="des">Lorem ipsum dolor sit amet...</div>
+            <button>See more</button>
+        </div>
+    </div>
+
+    <div class="item" style="background-image: url('gettyimages-114323137-612x612.jpg');">
+        <div class="conte">
+            <div class="name">Blala</div>
+            <div class="des">Lorem ipsum dolor sit amet...</div>
+            <button>See more</button>
+        </div>
+    </div>
+
+    <!-- repete para as outras imagens -->
+</div>
+
+
+
+
+
+</main>
+   <footer>
+  <div class="fo-co">
+<div class="fo-cs">
+
+    <p> TOCANDO SEMPRE E SEMPRE!</p>
+
+    <div id="fsm">
+
+        <a href="#" class="foo-li" id="instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+         
+        <a href="#" class="foo-li" id="facebook">
+            <i class="fa-brands     fa-facebook-f"></i>
+        </a>
+         
+        <a href="#" class="foo-li" id="whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+           
+
+    </div>
+    <ul class="fo-lis">
+        <li>
+            <h3>blog</h3>
+        </li>
+     
+           <li>
+            <a href="#" class="foo-li">teach</a>
+        </li>
+           <li>
+            <a href="#" class="foo-li">adventures</a>
+        </li>
+           <li>
+            <a href="#" class="foo-li">music</a>
+        </li>
+
+    </ul>
+    <ul class="fo-lis">
+        <li>
+            <h3>produto</h3>
+        </li>
+     
+           <li>
+            <a href="#" class="foo-li">app</a>
+        </li>
+           <li>
+            <a href="#" class="foo-li">cnal</a>
+        </li>
+           <li>
+            <a href="#" class="foo-li">claud</a>
+        </li>
+
+    </ul>
+     <div id="fo-su">
+        <h3>subscribe</h3>
+        <p>
+            Coloque seu Email e ajude a obra!
+        </p>
+        <div id="ig">
+         <input type="email" id="email"
+         placeholder="email@ni.com">
+         
+         <button>
+            <i class="fa-regular fa-envelope"></i>
+         </button>
+        </div>
+     </div>
+</div>
+<div id="f-t">
+    <a href="https://nycollasn.github.io/exe/17/site.html"> FEITO POR NICOLINO 2025</a>
+</div>
+  </div>  
+        
+        
+            
+    
+</footer> 
+</body>
+</html>
